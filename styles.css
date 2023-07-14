@@ -1,6 +1,7 @@
 body {
-    /* padding-top: 60px; */
+    overflow-x: hidden;
 }
+
 
 .hero {
     background-image: url("assests/Ghosts.jpg");
@@ -10,6 +11,26 @@ body {
     height: 100vh;
 }
 
+.bg {
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+    background-position: stretch;
+}
+.background-cert {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}   
+
+.background-contact {
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
 .overflow {
     overflow-y: hidden;
+}
+
+.glass {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
 }

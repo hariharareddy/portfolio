@@ -8,14 +8,17 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+
   <title>My Portfolio</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar" >
     <div class="container">
       <a class="navbar-brand fs-4" href="#">devFolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -58,10 +61,10 @@
     </div>
   </div>
 
-  <div class="container border border-tertiary rounded text-center shadow mt-4 p-3" id="about">
+  <div class="container border border-tertiary rounded text-center shadow mt-4 mb-3 p-3" id="about">
     <h2 class="m-2">About me</h2>
     <div class="row mt-3">
-      <div class="col mb-3">
+      <div class="col mb-3" data-aos="flip-up" data-aos-duration="2000">
         <div class="row">
           <div class="col d-flex">
             <img class="rounded" src="assests/profile.png" alt="profile pic" width="200px" height="200px">
@@ -74,7 +77,7 @@
         </div>
 
       </div>
-      <div class="col fs-5">
+      <div class="col fs-5" data-aos="flip-down" data-aos-duration="2000">
         <p>I am a passionate and dedicated individual with a strong interest in front-end development. With expertise in
           HTML, CSS, and JavaScript, I strive to create engaging and user-friendly web experiences.</p>
         <p class="text-muted">My goal is to combine my technical skills with my creativity to develop innovative and
@@ -84,7 +87,7 @@
     </div>
     <div class="text-left fs-4">Skills</div>
     <div class="row mt-3">
-      <div class="col">
+      <div class="col" data-aos="flip-left" data-aos-duration="2000">
         <div class="progress m-3" style="height: 25px">
           <div class="progress-bar" style="width: 95%;">HTML</div>
         </div>
@@ -98,7 +101,7 @@
           <div class="progress-bar" style="width: 70%;">Bootstrap</div>
         </div>
       </div>
-      <div class="col">
+      <div class="col" data-aos="flip-right" data-aos-duration="2000">
         <div class="progress m-3" style="height: 25px">
           <div class="progress-bar" style="width: 85%;">Python</div>
         </div>
@@ -116,14 +119,14 @@
   </div>
   </div>
 
-  <div class="fluid-container mt-3 pl-5 pr-5 pb-5 bg-primary opacity-75" id="projects">
-    <h2 class="text-center text-black fw-bold p-3">Projects</h2>
-    <div class="container rounded bg-white">
+  <div class="fluid-container" id="projects">
+    <h2 class="text-center text-black fw-bold">Projects</h2>
+    <div class="fluid-container bg ">
       <div class="row pt-3 mb-3 ">
-        <div class="col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center ">
-          <div class="card shadow-lg border border-tertiary" style="width: 27rem;">
+        <div class="col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center">
+          <div class="card shadow-lg border border-tertiary" style="width: 27rem;" data-aos="fade-down-right" data-aos-duration="2000">
             <img src="assests/project1.jpg" class="card-img-top" alt="project 1 pic">
-            <div class="card-body">
+            <div class="card-body glass">
               <h5 class="card-title">Personal Blog Page</h5>
               <p class="card-text">I have created a personalized blog page where I share my thoughts, experiences, and insights on various topics of Technology.</p>
               <a href="https://hariharareddy.github.io/Udacity-Frontend-Nanodegree/p-1-Blog-Page/index.html" target="_blank" class="btn btn-primary">Checkout Live</a>
@@ -131,7 +134,7 @@
           </div>
         </div>
         <div class="col-sm-6 mb-sm-0 d-flex justify-content-center ">
-          <div class="card shadow-lg border border-tertiary" style="width: 27rem;">
+          <div class="card shadow-lg border border-tertiary" style="width: 27rem;" data-aos="fade-down-left" data-aos-duration="2000">
             <img src="assests/project2.jpg" class="card-img-top" alt="project 2 pic">
             <div class="card-body">
               <h5 class="card-title">Landing Page</h5>
@@ -144,7 +147,7 @@
       </div>
       <div class="row pb-3 ">
         <div class="col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center ">
-          <div class="card shadow-lg border border-tertiary" style="width: 27rem;">
+          <div class="card shadow-lg border border-tertiary" style="width: 27rem;" data-aos="fade-up-right" data-aos-duration="2000">
             <img src="assests/project3.jpg" class="card-img-top" alt="project 3 pic">
             <div class="card-body">
               <h5 class="card-title">Weather Web App</h5>
@@ -154,7 +157,7 @@
           </div>
         </div>
         <div class="col-sm-6 mb-sm-0 d-flex justify-content-center ">
-          <div class="card shadow-lg border border-tertiary" style="width: 27rem;">
+          <div class="card shadow-lg border border-tertiary" style="width: 27rem;" data-aos="fade-up-left" data-aos-duration="2000">
             <img src="assests/project4.jpg" class="card-img-top" alt="project 4 pic">
             <div class="card-body">
               <h5 class="card-title">News Article Analyser</h5>
@@ -167,9 +170,9 @@
       </div>
     </div>
   </div>
-  <div class="container border border-primary" id="certifications">
-    <h2 class="text-center">Certifications</h2>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide w-100 mb-4" data-bs-ride="carousel" data-bs-interval="5000">
+  <div class="container border border-tertiary rounded background-cert shadow mt-4 pt-1" id="certifications">
+    <h2 class="text-center mb-2">Certifications</h2>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide w-100 mb-4" data-bs-ride="carousel" data-bs-interval="5000" data-aos="zoom-in-up" data-aos-duration="2000">
       <div class="carousel-indicators ">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -181,7 +184,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active" >
           <div class="fluid-container w-100 d-flex justify-content-center">
-            <div class="card" style="width: 50rem;">
+            <div class="card" style="width: 48rem;">
               <img src="assests/udacityNanodegree.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Front End Developer</h5>
@@ -192,7 +195,7 @@
         </div>
         <div class="carousel-item" >
           <div class="fluid-container w-100 d-flex justify-content-center">
-            <div class="card" style="width: 50rem;">
+            <div class="card" style="width: 48rem;">
               <img src="assests/microsftAi.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Microsoft Azure AI 900</h5>
@@ -203,7 +206,7 @@
         </div>
         <div class="carousel-item ">
           <div class="fluid-container w-100 d-flex justify-content-center">
-            <div class="card" style="width: 50rem;">
+            <div class="card" style="width: 48rem;">
               <img src="assests/googDataAnaly.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Google Data Analytics</h5>
@@ -214,7 +217,7 @@
         </div>
       <div class="carousel-item">
         <div class="fluid-container w-100 d-flex justify-content-center">
-          <div class="card" style="width: 50rem;">
+          <div class="card h-100" style="width: 48rem;">
             <img src="assests/codeTantraPy.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Python Codetantra</h5>
@@ -225,7 +228,7 @@
       </div>
       <div class="carousel-item" >
         <div class="fluid-container w-100 d-flex justify-content-center">
-          <div class="card" style="width: 50rem;">
+          <div class="card" style="width: 48rem;">
             <img src="assests/gitCert.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Coursera Git and Github</h5>
@@ -236,7 +239,7 @@
       </div>
       <div class="carousel-item" >
         <div class="fluid-container w-100 d-flex justify-content-center">
-          <div class="card" style="width: 50rem;">
+          <div class="card" style="width: 48rem;">
             <img src="assests/pythonCert.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Coursera Python</h5>
@@ -256,9 +259,9 @@
     </div>
   </div>
 </div>
-<div class="fluid-container pb-4" id="contact">
-  <div class="container ">
-    <h2 class="text-center">Contact Me</h2>
+<div class="fluid-container border border-tertiary rounded shadow background-contact mt-4 mb-4 pb-4" id="contact">
+  <div class="container " data-aos="fade-up">
+    <h2 class="text-center p-3">Contact Me</h2>
     <div class="row">
       <div class="col-md-6">
         <form>
@@ -301,8 +304,8 @@
 </div>
 
 
-<footer class="footer">
-  <div class="fluid-container text-center bg-black d-flex align-items-center justify-content-center" style="height: 4rem;">
+<footer class="footer" >
+  <div class="fluid-container text-center bg-black d-flex align-items-center justify-content-center" style="height: 4rem;" >
     <h4 class="text-white px-3">Find me on</h4>
         <a href="https://www.linkedin.com/in/hariharareddyg/" class="text-white pt-2">
           <i class="fab fa-linkedin fa-lg fs-1"></i>
@@ -315,6 +318,9 @@
         </a>
   </div>
 </footer>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>
