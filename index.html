@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
@@ -16,7 +17,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
     <div class="container">
-      <a class="navbar-brand fs-4" href="#">Portfolio</a>
+      <a class="navbar-brand fs-4" href="#">devFolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -57,16 +58,17 @@
     </div>
   </div>
 
-  <div class="container border border-tertiary rounded text-center shadow mt-5 p-3" id="about">
+  <div class="container border border-tertiary rounded text-center shadow mt-4 p-3" id="about">
     <h2 class="m-2">About me</h2>
     <div class="row mt-3">
       <div class="col mb-3">
         <div class="row">
           <div class="col d-flex">
             <img class="rounded" src="assests/profile.png" alt="profile pic" width="200px" height="200px">
-            <div class="details d-flex flex-column justify-content-center text-wrap  " style="width: 100%;">
+            <div class="details d-flex flex-column justify-content-center align-content-center text-wrap  " style="width: 100%;">
               <p class="text-wrap fw-bold ">Name: Hari Hara Reddy G</p>
               <p class="text-wrap fw-bold">Profile: Frontend Dev</p>
+              <a href="assests/HariResume.pdf" target="_blank" ><button class="btn btn-success w-50 fw-bold fs-6">Resume</button></a>
             </div>
           </div>
         </div>
@@ -117,7 +119,7 @@
   <div class="fluid-container mt-3 pl-5 pr-5 pb-5 bg-primary opacity-75" id="projects">
     <h2 class="text-center text-black fw-bold p-3">Projects</h2>
     <div class="container rounded bg-white">
-      <div class="row p-3 mb-3 ">
+      <div class="row pt-3 mb-3 ">
         <div class="col-sm-6 mb-3 mb-sm-0 d-flex justify-content-center ">
           <div class="card shadow-lg border border-tertiary" style="width: 27rem;">
             <img src="assests/project1.jpg" class="card-img-top" alt="project 1 pic">
@@ -132,7 +134,7 @@
           <div class="card shadow-lg border border-tertiary" style="width: 27rem;">
             <img src="assests/project2.jpg" class="card-img-top" alt="project 2 pic">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Landing Page</h5>
               <p class="card-text">The page incorporates HTML, CSS, and JavaScript to create smooth scrolling, interactive navigation, and captivating animations.</p>
               <a href="https://hariharareddy.github.io/Udacity-Frontend-Nanodegree/P-2-Landing-Page/" target="_blank" class="btn btn-primary">Checkout Live</a>
             </div>
@@ -155,7 +157,7 @@
           <div class="card shadow-lg border border-tertiary" style="width: 27rem;">
             <img src="assests/project4.jpg" class="card-img-top" alt="project 4 pic">
             <div class="card-body">
-              <h5 class="card-title">Evaluating News Articles</h5>
+              <h5 class="card-title">News Article Analyser</h5>
               <p class="card-text">I developed an innovative news article evaluation tool that utilizes NLP techniques to analyze the sentiment and subjectivity of news articles.</p>
               <a href="https://article-score.onrender.com" target="_blank" class="btn btn-primary">Checkout Live</a>
             </div>
@@ -165,7 +167,154 @@
       </div>
     </div>
   </div>
+  <div class="container border border-primary" id="certifications">
+    <h2 class="text-center">Certifications</h2>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide w-100 mb-4" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators ">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" >
+          <div class="fluid-container w-100 d-flex justify-content-center">
+            <div class="card" style="width: 50rem;">
+              <img src="assests/udacityNanodegree.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Front End Developer</h5>
+                <a href="https://graduation.udacity.com/confirm/e/7679696c-c38c-11ed-a208-4f313d91d494" class="btn btn-primary">Verify</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" >
+          <div class="fluid-container w-100 d-flex justify-content-center">
+            <div class="card" style="width: 50rem;">
+              <img src="assests/microsftAi.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Microsoft Azure AI 900</h5>
+                <a href="https://www.credly.com/badges/b687205a-1878-44f5-9c96-4df4f296041d/linked_in?t=rl42sr" class="btn btn-primary">Verify</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="fluid-container w-100 d-flex justify-content-center">
+            <div class="card" style="width: 50rem;">
+              <img src="assests/googDataAnaly.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Google Data Analytics</h5>
+                <a href="https://www.credly.com/badges/09d44b0c-e994-468f-842f-9e44aa0fef96/public_url" class="btn btn-primary">Verify</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="carousel-item">
+        <div class="fluid-container w-100 d-flex justify-content-center">
+          <div class="card" style="width: 50rem;">
+            <img src="assests/codeTantraPy.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Python Codetantra</h5>
+              <a href="https://vemu.codetantra.com/cert/certificate.jsp?certId=CT132-soHahDR-cmX" class="btn btn-primary">Verify</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" >
+        <div class="fluid-container w-100 d-flex justify-content-center">
+          <div class="card" style="width: 50rem;">
+            <img src="assests/gitCert.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Coursera Git and Github</h5>
+              <a href="https://www.coursera.org/account/accomplishments/verify/MXXRMR94CSJZ" class="btn btn-primary">Verify</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" >
+        <div class="fluid-container w-100 d-flex justify-content-center">
+          <div class="card" style="width: 50rem;">
+            <img src="assests/pythonCert.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Coursera Python</h5>
+              <a href="https://www.coursera.org/account/accomplishments/verify/692Y9VZVUXWJ" class="btn btn-primary">Verify</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="fluid-container pb-4" id="contact">
+  <div class="container ">
+    <h2 class="text-center">Contact Me</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="name" class="mb-1">Name</label>
+            <input type="text" class="form-control mb-1" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email" class="mb-1">Email</label>
+            <input type="email" class="form-control mb-1" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="message" class="mb-1">Message</label>
+            <textarea class="form-control mb-1" id="message" rows="5" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mt-1">Submit</button>
+          <div class="d-flex flex-column flex-lg-row justify-content-between mt-3">
+            <h3>Ping me</h3>
+            <div class="form-group ">
+              <p class="form-control-static">
+                <i class="fas fa-envelope fs-3"></i>
+                <a href="mailto:hariharareddyg9@gmail.com" class="text-decoration-none p-2 fs-5">hariharareddyg9@gmail.com</a>
+              </p>
+            </div>
+            <div class="form-group">
+              <p class="form-control-static ">
+                <i class="fas fa-phone fs-3"></i>
+                <a href="tel:+918688132976" class="text-decoration-none p-2 fs-4">Call me</a>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
 
+      <div class="col-md-6 pt-2 overflow">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.5636702427259!2d79.11970680828911!3d13.41116769578509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2a5b01246faf7%3A0xdb02b906264a251f!2sSanjeevarayani%20Palli!5e0!3m2!1sen!2sin!4v1689256004370!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="fluid-container text-center bg-black d-flex align-items-center justify-content-center" style="height: 4rem;">
+    <h4 class="text-white px-3">Find me on</h4>
+        <a href="https://www.linkedin.com/in/hariharareddyg/" class="text-white pt-2">
+          <i class="fab fa-linkedin fa-lg fs-1"></i>
+        </a>
+        <a href="https://www.hackerrank.com/hariharareddyg?hr_r=1" class="text-white fs-2 px-5 pt-0">
+          <i class="fab fa-hackerrank fa-lg"></i>
+        </a>
+        <a href="https://github.com/hariharareddy" class="text-white pt-2">
+          <i class="fab fa-github fa-lg fs-1 pt-1"></i>
+        </a>
+  </div>
+</footer>
 </body>
 
 </html>

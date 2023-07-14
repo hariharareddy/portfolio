@@ -1,7 +1,15 @@
+body {
+    /* padding-top: 60px; */
+}
+
 .hero {
     background-image: url("assests/Ghosts.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+.overflow {
+    overflow-y: hidden;
 }
